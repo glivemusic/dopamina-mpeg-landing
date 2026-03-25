@@ -1,93 +1,215 @@
 <!DOCTYPE html>
-<html lang="es-PY">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dopamina.mpeg | Packs de Música Premium</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="glow-bg"></div>
-    <nav class="navbar">
-        <div class="logo-container">
-            <a href="index.html"><img src="logo/dopamina.mpeg.PNG" alt="Dopamina.mpeg Logo" class="logo"></a>
-        </div>
-        <div class="nav-links">
-            <a href="index.html" class="active">Packs</a>
-            <a href="sobre.html">Acerca de</a>
-            <a href="#contato">Contacto</a>
-        </div>
-    </nav>
-
-    <main class="hero">
-        <div class="header-section">
-            <h1 class="title">Tu Música a <span class="highlight">Otro Nivel</span></h1>
-            <p class="subtitle">Descubrí los mejores packs de música para hacer vibrar tus fiestas con Dopamina.mpeg, legalmente.</p>
-        </div>
-
-        <section id="packs" class="products-container">
-            <div class="product-card">
-                <div class="card-glow"></div>
-                <div class="badges">
-                    <span class="badge exclusive">Pack Exclusivo</span>
-                    <span class="badge new">Nuevo</span>
-                </div>
-                
-                <div class="product-image-container">
-                    <img src="assets/reggae_pack.png" alt="Dopamina Reggae Pack" class="product-image">
-                </div>
-
-                <div class="product-info">
-                    <p class="product-category">PACK DE MÚSICA</p>
-                    <h3 class="product-title">Dopamina.mpeg_Reggae_Versions_VOL. 1</h3>
-                    <p class="product-desc">La mejor selección de enganchados y versiones reggae de tus temas favoritos. Llevate este pack y metele onda a tus previas.</p>
-                    
-                    <div class="price-container">
-                        <span class="price-value">Llevate Ahora</span>
-                    </div>
-
-                    <!-- Botão com Link do Stripe Fornecido -->
-                    <a href="https://buy.stripe.com/4gM28r0uo50BeSi3Hi5wI0b" class="buy-button" target="_blank" rel="noopener noreferrer">
-                        <span>Pago Seguro con Stripe</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                    </a>
-
-                    <div class="requirements">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-                        <span>Descarga rápida y segura. Formato MP3/WAV compatible con cualquier reproductor.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <p>&copy; 2026 Dopamina.mpeg. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- Script de Tilt e Microinterações Premium -->
-    <script>
-        const card = document.querySelector('.product-card');
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const rotateX = ((y - centerY) / centerY) * -5;
-            const rotateY = ((x - centerX) / centerX) * 5;
-            
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-        });
-
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) translateY(0)`;
-        });
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dopamina.mpeg | Packs de Música Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#3c4b4b",
+              "surface-container-low": "#1c1b1b",
+              "outline-variant": "#2a3b4b",
+              "on-background": "#e5e2e1",
+              "on-surface": "#e5e2e1",
+              "surface-container-lowest": "#0b0b0d",
+              "secondary-fixed": "#c0a0ff",
+              "background": "#0b0b0d",
+              "on-primary": "#003737",
+              "error-container": "#93000a",
+              "on-secondary-fixed": "#1a0033",
+              "surface-container": "#18181c",
+              "on-tertiary-fixed-variant": "#5d3f3c",
+              "tertiary-container": "#ffd3ce",
+              "surface-bright": "#393939",
+              "primary": "#00FFFF",
+              "on-primary-fixed-variant": "#004b4b",
+              "surface-tint": "#00FFFF",
+              "tertiary-fixed": "#ffdad6",
+              "on-secondary-fixed-variant": "#3c006b",
+              "secondary-fixed-dim": "#4B0082",
+              "surface-variant": "#2a2a2e",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-high": "#232326",
+              "on-surface-variant": "#b0c6cc",
+              "on-secondary-container": "#f0e6ff",
+              "secondary": "#4B0082",
+              "surface": "#0b0b0d",
+              "on-tertiary-fixed": "#2c1513",
+              "error": "#ffb4ab",
+              "on-error": "#690005",
+              "on-primary-fixed": "#002020",
+              "secondary-container": "#4B0082",
+              "on-primary-container": "#00ffff",
+              "tertiary": "#fff8f7",
+              "on-tertiary-container": "#7a5955",
+              "surface-container-highest": "#313136",
+              "surface-dim": "#0b0b0d",
+              "primary-fixed": "#7affff",
+              "inverse-on-surface": "#313030",
+              "inverse-primary": "#006b6b",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#e7bdb8",
+              "on-tertiary": "#442927",
+              "primary-fixed-dim": "#00FFFF",
+              "on-error-container": "#ffdad6",
+              "primary-container": "#00FFFF"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
     </script>
-</body>
-</html>
+<style type="text/tailwindcss">
+        .glass-panel {
+            background: rgba(30, 30, 35, 0.4);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .neon-glow-blue {
+            filter: blur(100px);
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.12) 0%, transparent 70%);
+        }
+        .neon-glow-indigo {
+            filter: blur(100px);
+            background: radial-gradient(circle, rgba(75, 0, 130, 0.15) 0%, transparent 70%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .product-tilt {
+            transition: transform 0.3s ease;
+            transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
+        }
+        .product-tilt:hover {
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-background font-body selection:bg-primary-container selection:text-on-primary">
+<div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+<div class="absolute -top-24 -left-24 w-[500px] h-[500px] neon-glow-blue"></div>
+<div class="absolute top-1/2 -right-24 w-[600px] h-[600px] neon-glow-indigo"></div>
+<div class="absolute -bottom-48 left-1/3 w-[500px] h-[500px] neon-glow-blue"></div>
+</div>
+<nav class="fixed top-0 w-full z-50 bg-[#0b0b0d]/80 backdrop-blur-md border-b border-white/5 shadow-[0px_0px_40px_rgba(0,255,255,0.05)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="#">
+    <img src="logo/dopamina.mpeg.PNG" alt="Dopamina.mpeg Logo" class="h-8 md:h-10 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+</a>
+<div class="hidden md:flex items-center gap-12 font-headline font-bold tracking-[-0.04em] uppercase text-sm">
+<a class="text-[#00FFFF] border-b-2 border-[#00FFFF] pb-1 transition-all" href="#packs">Packs</a>
+<a class="text-white/70 hover:text-[#00FFFF] transition-colors" href="#acerca">Acerca de</a>
+<a class="text-white/70 hover:text-[#00FFFF] transition-colors" href="#contacto">Contacto</a>
+</div>
+<a href="#packs" class="bg-[#00FFFF] text-[#003737] font-headline font-bold px-6 py-2 rounded-xl scale-95 active:scale-90 duration-200 transition-all hover:shadow-[0px_0px_20px_rgba(0,255,255,0.4)] uppercase text-sm inline-block text-center">
+                Comprar
+</a>
+</div>
+</nav>
+<main class="relative z-10 pt-32">
+<section class="max-w-7xl mx-auto px-8 mb-24 text-center">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-[-0.04em] text-white mb-6 max-w-4xl mx-auto leading-tight">
+                Tu Música a Otro Nivel
+            </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-light leading-relaxed">
+                Descubrí los mejores packs de música para hacer vibrar tus fiestas con Dopamina.mpeg, legalmente.
+            </p>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-32 flex justify-center" id="packs">
+<div class="glass-panel rounded-[16px] p-8 md:p-12 max-w-4xl w-full flex flex-col md:flex-row gap-12 items-center shadow-2xl">
+<div class="w-full md:w-1/2 relative group">
+<div class="product-tilt relative aspect-square rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-surface-container flex items-center justify-center p-4">
+<img alt="Dopamina.mpeg_Reggae_Versions_VOL. 1" class="w-full h-full object-contain filter drop-shadow-[0_20px_20px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-all duration-500" src="assets/reggae_pack.png"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-white text-black text-[10px] font-bold px-3 py-1 rounded-full tracking-widest uppercase">PACK EXCLUSIVO</span>
+<span class="bg-[#00FFFF] text-[#003737] text-[10px] font-bold px-3 py-1 rounded-full tracking-widest uppercase shadow-[0_0_15px_rgba(0,255,255,0.6)]">NUEVO</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<div>
+<h2 class="font-headline text-3xl font-bold text-white mb-3 break-all md:break-words">Dopamina.mpeg_Reggae_Versions_VOL. 1</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                            La mejor selección de enganchados y versiones reggae de tus temas favoritos. Llevate este pack y metele onda a tus previas.
+                        </p>
+</div>
+<div class="flex items-baseline gap-4">
+<span class="text-4xl font-headline font-bold text-white">US$ 4.99</span>
+<span class="text-on-surface-variant text-sm line-through opacity-50">US$ 12.99</span>
+</div>
+<div class="space-y-4">
+<a href="https://buy.stripe.com/4gM28r0uo50BeSi3Hi5wI0b" target="_blank" rel="noopener noreferrer" class="w-full bg-white text-black font-headline font-bold py-5 rounded-xl flex items-center justify-center gap-3 hover:bg-[#00FFFF] hover:text-[#003737] transition-all duration-300 group shadow-lg">
+                            Pago Seguro con Stripe
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[#00FFFF] text-sm">verified</span>
+                                Descarga rápida y segura. 
+                            </div>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[#00FFFF] text-sm">audio_file</span>
+                                Formato MP3/WAV compatible con cualquier reproductor.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-32 py-20 border-t border-white/5" id="acerca">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h2 class="font-headline text-4xl font-bold text-white tracking-tight">Acerca de Dopamina.mpeg</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        Música, humor, análisis, etc. Todo lo que necesitás para pasar súper bien. Nos enfocamos en curar sonidos que rompan la rutina y elevate la experiencia auditiva de nuestra comunidad.
+                    </p>
+<a class="inline-flex items-center gap-3 group" href="https://instagram.com/redemmpy" target="_blank" rel="noopener noreferrer">
+<div class="w-12 h-12 rounded-full glass-panel flex items-center justify-center group-hover:bg-[#00FFFF] group-hover:text-[#003737] transition-all">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant">Cuenta de artista</p>
+<p class="text-lg font-bold text-white">@redemmpy</p>
+</div>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-panel aspect-square rounded-2xl flex flex-col items-center justify-center p-6 text-center hover:border-[#00FFFF]/30 transition-colors">
+<span class="material-symbols-outlined text-[#00FFFF] text-4xl mb-4">equalizer</span>
+<h3 class="text-white font-bold mb-1">HQ Audio</h3>
+<p class="text-xs text-on-surface-variant">Masterizado profesionalmente</p>
+</div>
+<div class="glass-panel aspect-square rounded-2xl flex flex-col items-center justify-center p-6 text-center mt-8 hover:border-[#4B0082]/30 transition-colors">
+<span class="material-symbols-outlined text-[#4B0082] text-4xl mb-4">speed</span>
+<h3 class="text-white font-bold mb-1">Instantáneo</h3>
+<p class="text-xs text-on-surface-variant">Acceso inmediato post-pago</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#0b0b0d] w-full py-12 border-t border-white/5" id="contacto">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="text-lg font-bold text-white font-headline tracking-tighter">Dopamina.mpeg</div>
+<div class="flex gap-8">
+<a class="text-white/40 hover:text-[#00FFFF] transition-colors font-body text-sm" href="#packs">Packs</a>
+<a class="text-white/40 hover:text-[#00FFFF] transition-colors font-body text-sm" href="#acerca">Acerca de</a>
+<a class="text-white/40 hover:text-[#00FFFF] transition-colors font-body text-sm" href="#contacto">Contacto</a>
+</div>
+<p class="font-['Inter'] text-sm text-white/60">
+                © 2026 Dopamina.mpeg. Todos los derechos reservados.
+            </p>
+</div>
+</footer>
+</body></html>
