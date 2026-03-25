@@ -118,7 +118,7 @@ body {
 }
 
 .title .highlight {
-    color: var(--accent);
+    color: inherit;
     display: inline-block;
 }
 
@@ -323,7 +323,7 @@ body {
 }
 
 .section-title .highlight {
-    color: var(--accent);
+    color: inherit;
     display: inline-block;
 }
 
