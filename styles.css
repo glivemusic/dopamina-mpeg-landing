@@ -118,10 +118,7 @@ body {
 }
 
 .title .highlight {
-    background: linear-gradient(135deg, var(--accent), var(--accent-purple));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--accent);
     display: inline-block;
 }
 
@@ -144,10 +141,10 @@ body {
 .product-card {
     background: var(--surface-dark);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 1.5rem;
+    border-radius: 16px;
+    padding: 1rem;
     width: 100%;
-    max-width: 420px;
+    max-width: 380px;
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -209,13 +206,13 @@ body {
     aspect-ratio: 4/3;
     background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 100%);
     border-radius: 12px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .product-image {
@@ -256,9 +253,9 @@ body {
 
 .product-desc {
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
 }
 
 .price-container {
@@ -326,10 +323,7 @@ body {
 }
 
 .section-title .highlight {
-    background: linear-gradient(135deg, var(--accent), var(--accent-purple));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--accent);
     display: inline-block;
 }
 
