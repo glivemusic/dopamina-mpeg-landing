@@ -257,7 +257,7 @@
         let endTime = localStorage.getItem('dopamina_bundle_offer');
         
         if (!endTime || new Date().getTime() > endTime) {
-            endTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+            endTime = new Date().getTime() + 5 * 60 * 60 * 1000;
             localStorage.setItem('dopamina_bundle_offer', endTime);
         }
 
@@ -267,7 +267,7 @@
 
             if (distance < 0) {
                 // Reset timer magic!
-                endTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+                endTime = new Date().getTime() + 5 * 60 * 60 * 1000;
                 localStorage.setItem('dopamina_bundle_offer', endTime);
             }
 
