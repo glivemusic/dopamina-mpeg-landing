@@ -154,8 +154,57 @@
                 ¡Esta es una compra única para ti! Por favor, recuerda que es de uso personal y exclusiva de esta web; no está permitido compartirla en otros sitios sin nuestro permiso.
             </p>
 </section>
-<section class="max-w-5xl mx-auto px-8 mb-32 grid md:grid-cols-2 gap-6 lg:gap-8" id="packs">
-<div class="glass-panel rounded-[16px] p-6 md:p-8 w-full flex flex-col gap-6 items-center shadow-2xl h-full">
+<section class="max-w-6xl mx-auto px-8 mb-32 space-y-8" id="packs">
+<!-- Bundle 2 en 1 -->
+<div class="glass-panel rounded-[16px] p-6 md:p-8 w-full shadow-2xl relative overflow-hidden ring-1 ring-[#d6ac03]/30">
+<div class="absolute -top-32 -right-32 w-64 h-64 neon-glow-blue opacity-50 blur-[80px]"></div>
+<div class="relative z-10 grid md:grid-cols-5 gap-8 items-center">
+    <div class="md:col-span-2 relative group">
+        <div class="product-tilt relative aspect-square rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-surface-container flex items-center justify-center p-3">
+            <img alt="Dopamina.mpeg_Bundle_2_en_1" class="w-full h-full object-cover filter drop-shadow-[0_20px_20px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-all duration-500 rounded-lg" src="img/2_EN_1_s86abc.jpg"/>
+            <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-[#d6ac03] text-[#3b2d00] text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase shadow-[0_0_15px_rgba(214,172,3,0.45)]">OFERTA LIMITADA</span>
+            </div>
+        </div>
+    </div>
+    <div class="md:col-span-3 space-y-6 flex flex-col h-full justify-between">
+        <div>
+            <h2 class="font-headline text-2xl md:text-3xl font-bold text-white mb-3 break-all md:break-words">Dopamina.mpeg_Cumbias_&_Boleros_VOL.1</h2>
+            <p class="text-sm md:text-base text-on-surface-variant leading-relaxed mb-4">
+                Llevate los dos EPs más exclusivos: cumbias reversionadas a Reggae/Dub y boleros clásicos para bajar las revoluciones con elegancia. El pack definitivo "2 en 1".
+            </p>
+            <div class="flex items-center gap-4 py-4 border-y border-white/10">
+                <div class="flex items-baseline gap-3">
+                    <span class="text-xl md:text-2xl font-headline font-bold text-white/40 line-through">US$ 9.99</span>
+                    <span class="text-3xl md:text-4xl font-headline font-bold text-white text-shadow-glow">US$ 7.99</span>
+                </div>
+                <div class="ml-auto text-[10px] md:text-xs font-bold text-[#d6ac03] bg-[#d6ac03]/10 px-3 py-1.5 rounded-lg border border-[#d6ac03]/30 animate-pulse" id="countdown-bundle">
+                    Calculando...
+                </div>
+            </div>
+        </div>
+        <div class="space-y-4">
+            <a href="https://buy.stripe.com/00wfZh90UeBb5hIelW5wI0d" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto inline-flex bg-[#d6ac03] text-[#3b2d00] font-headline font-bold text-base py-4 px-8 rounded-xl items-center justify-center gap-2 hover:bg-[#b38800] transition-all duration-300 group shadow-[0_0_30px_rgba(214,172,3,0.3)] hover:shadow-[0_0_40px_rgba(214,172,3,0.5)] hover:scale-[1.02]">
+                Aprovechar Oferta con Stripe
+                <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">shopping_cart</span>
+            </a>
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                <div class="flex items-center gap-2 text-xs text-on-surface-variant/80">
+                    <span class="material-symbols-outlined text-[#d6ac03] text-base">verified</span>
+                    Descarga rápida y segura
+                </div>
+                <div class="flex items-center gap-2 text-xs text-on-surface-variant/80">
+                    <span class="material-symbols-outlined text-[#d6ac03] text-base">audio_file</span>
+                    Formato MP3 | 320 Kbps | 2 Packs
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+<div class="glass-panel rounded-[16px] p-6 md:p-8 w-full flex flex-col gap-6 items-center shadow-2xl h-full border border-white/5">
 <div class="w-full relative group">
 <div class="product-tilt relative aspect-square rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-surface-container flex items-center justify-center p-3">
 <img alt="Dopamina.mpeg_Reggae_Versions_VOL. 1" class="w-full h-full object-contain filter drop-shadow-[0_20px_20px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-all duration-500" src="img/Dopamina-Portada-convertido-a-mediano.jpeg"/>
@@ -175,32 +224,21 @@
 <span class="text-2xl md:text-3xl font-headline font-bold text-white">US$ 4.99</span>
 </div>
 <div class="space-y-3">
-<a href="https://buy.stripe.com/4gM28r0uo50BeSi3Hi5wI0b" target="_blank" rel="noopener noreferrer" class="w-full bg-white text-black font-headline font-bold text-sm py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-[#d6ac03] hover:text-[#3b2d00] transition-all duration-300 group shadow-lg">
+<a href="https://buy.stripe.com/4gM28r0uo50BeSi3Hi5wI0b" target="_blank" rel="noopener noreferrer" class="w-full bg-white text-black font-headline font-bold text-sm py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-white/90 transition-all duration-300 group shadow-lg">
                             Pago Seguro con Stripe
                             <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 <p class="text-[10px] text-on-surface-variant/60 text-center pt-1">Ingresa un correo válido para recibir una copia de tu compra.</p>
-<div class="flex flex-col gap-1.5 pt-1">
-<div class="flex items-center gap-2 text-[11px] md:text-xs text-on-surface-variant/80">
-<span class="material-symbols-outlined text-[#d6ac03] text-sm">verified</span>
-                                Descarga rápida y segura. 
-                            </div>
-<div class="flex items-center gap-2 text-[11px] md:text-xs text-on-surface-variant/80">
-<span class="material-symbols-outlined text-[#d6ac03] text-sm">audio_file</span>
-                                Formato MP3 | 320 Kbps
-                            </div>
-</div>
 </div>
 </div>
 </div>
 
-<div class="glass-panel rounded-[16px] p-6 md:p-8 w-full flex flex-col gap-6 items-center shadow-2xl h-full relative">
+<div class="glass-panel rounded-[16px] p-6 md:p-8 w-full flex flex-col gap-6 items-center shadow-2xl h-full border border-white/5">
 <div class="w-full relative group">
 <div class="product-tilt relative aspect-square rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-surface-container flex items-center justify-center p-3">
 <img alt="Dopamina.mpeg_Boleros_En_Reggae_VOL. 1" class="w-full h-full object-cover filter drop-shadow-[0_20px_20px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-all duration-500 rounded-lg" src="img/boleros-en-reggae.jpg"/>
 <div class="absolute top-3 left-3 flex flex-col gap-1.5">
 <span class="bg-white text-black text-[9px] font-bold px-2 py-1 rounded-full tracking-widest uppercase">PACK EXCLUSIVO</span>
-<span class="bg-[#d6ac03] text-[#3b2d00] text-[9px] font-bold px-2 py-1 rounded-full tracking-widest uppercase shadow-[0_0_15px_rgba(214,172,3,0.45)]">NUEVO</span>
 </div>
 </div>
 </div>
@@ -215,25 +253,50 @@
 <span class="text-2xl md:text-3xl font-headline font-bold text-white">US$ 4.99</span>
 </div>
 <div class="space-y-3">
-<a href="https://buy.stripe.com/5kQbJ1elegJj9xY1za5wI0c" target="_blank" rel="noopener noreferrer" class="w-full bg-white text-black font-headline font-bold text-sm py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-[#d6ac03] hover:text-[#3b2d00] transition-all duration-300 group shadow-lg">
+<a href="https://buy.stripe.com/5kQbJ1elegJj9xY1za5wI0c" target="_blank" rel="noopener noreferrer" class="w-full bg-white text-black font-headline font-bold text-sm py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-white/90 transition-all duration-300 group shadow-lg">
                             Pago Seguro con Stripe
                             <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 <p class="text-[10px] text-on-surface-variant/60 text-center pt-1">Ingresa un correo válido para recibir una copia de tu compra.</p>
-<div class="flex flex-col gap-1.5 pt-1">
-<div class="flex items-center gap-2 text-[11px] md:text-xs text-on-surface-variant/80">
-<span class="material-symbols-outlined text-[#d6ac03] text-sm">verified</span>
-                                Descarga rápida y segura. 
-                            </div>
-<div class="flex items-center gap-2 text-[11px] md:text-xs text-on-surface-variant/80">
-<span class="material-symbols-outlined text-[#d6ac03] text-sm">audio_file</span>
-                                Formato MP3 | 320 Kbps
-                            </div>
 </div>
 </div>
 </div>
 </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const countdownEl = document.getElementById('countdown-bundle');
+        if (!countdownEl) return;
+
+        let endTime = localStorage.getItem('dopamina_bundle_offer');
+        
+        if (!endTime || new Date().getTime() > endTime) {
+            endTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+            localStorage.setItem('dopamina_bundle_offer', endTime);
+        }
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = endTime - now;
+
+            if (distance < 0) {
+                // Reset timer magic!
+                endTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+                localStorage.setItem('dopamina_bundle_offer', endTime);
+            }
+
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+            const s = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+
+            countdownEl.innerHTML = `🌟 Termina en: ${h}:${m}:${s}`;
+        }
+        
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    });
+</script>
 <section class="max-w-7xl mx-auto px-8 mb-32 py-20 border-t border-white/5" id="acerca">
 <div class="grid md:grid-cols-2 gap-16 items-center">
 <div class="space-y-8">
